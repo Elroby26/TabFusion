@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabbed Content Experience</title>
+    <meta
+      name="description"
+      content="A premium, responsive, accessible tabbed content experience built with HTML, CSS, and vanilla JavaScript."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Premium interface • polished interactions</p>
+          <h1>Tabbed Content Section</h1>
+          <p class="hero__text">
+            Discover a refined, immersive experience crafted for modern SaaS,
+            business, and portfolio products.
+          </p>
+          <div class="hero__actions">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+            >
+              <span class="theme-icon">🌙</span>
+              <span class="theme-label">Dark Mode</span>
+            </button>
+            <a class="hero__link" href="#tabsSection">Explore the tabs</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="tabsSection" class="tabs-section">
+        <div class="tabs-card">
+          <div class="tabs-toolbar">
+            <div
+              class="tabs-scroll"
+              role="tablist"
+              aria-label="Tabbed content navigation"
+            >
+              <button
+                class="tab active"
+                id="tab-overview"
+                role="tab"
+                type="button"
+                data-tab="overview"
+                aria-selected="true"
+                aria-controls="panel-overview"
+                tabindex="0"
+              >
+                <span class="tab__icon">◉</span>
+                <span>Overview</span>
+              </button>
+              <button
+                class="tab"
+                id="tab-features"
+                role="tab"
+                type="button"
+                data-tab="features"
+                aria-selected="false"
+                aria-controls="panel-features"
+                tabindex="-1"
+              >
+                <span class="tab__icon">✦</span>
+                <span>Features</span>
+              </button>
+              <button
+                class="tab"
+                id="tab-pricing"
+                role="tab"
+                type="button"
+                data-tab="pricing"
+                aria-selected="false"
+                aria-controls="panel-pricing"
+                tabindex="-1"
+              >
+                <span class="tab__icon">◌</span>
+                <span>Pricing</span>
+              </button>
+              <button
+                class="tab"
+                id="tab-gallery"
+                role="tab"
+                type="button"
+                data-tab="gallery"
+                aria-selected="false"
+                aria-controls="panel-gallery"
+                tabindex="-1"
+              >
+                <span class="tab__icon">⬢</span>
+                <span>Gallery</span>
+              </button>
+              <button
+                class="tab"
+                id="tab-contact"
+                role="tab"
+                type="button"
+                data-tab="contact"
+                aria-selected="false"
+                aria-controls="panel-contact"
+                tabindex="-1"
+              >
+                <span class="tab__icon">✉</span>
+                <span>Contact</span>
+              </button>
+            </div>
+            <button
+              class="theme-toggle compact"
+              type="button"
+              aria-label="Toggle color theme"
+            >
+              <span class="theme-icon">🌙</span>
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <section
+              class="tab-panel active"
+              id="panel-overview"
+              role="tabpanel"
+              aria-labelledby="tab-overview"
+            >
+              <div class="panel-grid">
+                <div class="panel-copy">
+                  <p class="panel-kicker">Overview</p>
+                  <h2>Built for clarity, motion, and conversion.</h2>
+                  <p>
+                    This component combines elegant structure, dynamic states,
+                    and meaningful transitions to elevate ordinary browsing into
+                    a premium experience.
+                  </p>
+                  <div class="stats-grid">
+                    <article class="stat-card">
+                      <strong>98%</strong>
+                      <span>Engagement</span>
+                    </article>
+                    <article class="stat-card">
+                      <strong>24/7</strong>
+                      <span>Support</span>
+                    </article>
+                    <article class="stat-card">
+                      <strong>4.9★</strong>
+                      <span>Client Rating</span>
+                    </article>
+                  </div>
+                </div>
+                <div class="panel-visual">
+                  <div class="visual-badge">New</div>
+                  <div class="visual-card">
+                    <h3>Smart workflow</h3>
+                    <p>
+                      Switch context in seconds with fluid motion and accessible
+                      controls.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel"
+              id="panel-features"
+              role="tabpanel"
+              aria-labelledby="tab-features"
+              hidden
+            >
+              <div class="features-grid">
+                <article class="feature-card">
+                  <div class="feature-icon">⚡</div>
+                  <h3>Rapid interactions</h3>
+                  <p>
+                    Instant feedback and silky transitions keep the experience
+                    feeling alive.
+                  </p>
+                </article>
+                <article class="feature-card">
+                  <div class="feature-icon">♿</div>
+                  <h3>Accessible by design</h3>
+                  <p>
+                    Keyboard-friendly patterns and strong focus styling support
+                    every user.
+                  </p>
+                </article>
+                <article class="feature-card">
+                  <div class="feature-icon">🔒</div>
+                  <h3>Reliable persistence</h3>
+                  <p>
+                    Preferences such as theme and tab state are remembered
+                    automatically.
+                  </p>
+                </article>
+                <article class="feature-card">
+                  <div class="feature-icon">📱</div>
+                  <h3>Mobile-ready</h3>
+                  <p>
+                    Swipe gestures and scrollable tabs make the experience feel
+                    native on touch.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel"
+              id="panel-pricing"
+              role="tabpanel"
+              aria-labelledby="tab-pricing"
+              hidden
+            >
+              <div class="pricing-grid">
+                <article class="price-card">
+                  <h3>Starter</h3>
+                  <p class="price">$19<span>/mo</span></p>
+                  <ul>
+                    <li>1 workspace</li>
+                    <li>Core analytics</li>
+                    <li>Email support</li>
+                  </ul>
+                  <button type="button">Choose Starter</button>
+                </article>
+                <article class="price-card featured">
+                  <div class="price-badge">Most Popular</div>
+                  <h3>Growth</h3>
+                  <p class="price">$49<span>/mo</span></p>
+                  <ul>
+                    <li>Unlimited projects</li>
+                    <li>Advanced automation</li>
+                    <li>Priority support</li>
+                  </ul>
+                  <button type="button">Choose Growth</button>
+                </article>
+                <article class="price-card">
+                  <h3>Enterprise</h3>
+                  <p class="price">Custom</p>
+                  <ul>
+                    <li>Dedicated success manager</li>
+                    <li>Security review</li>
+                    <li>Custom integrations</li>
+                  </ul>
+                  <button type="button">Contact Sales</button>
+                </article>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel"
+              id="panel-gallery"
+              role="tabpanel"
+              aria-labelledby="tab-gallery"
+              hidden
+            >
+              <div class="gallery-grid">
+                <figure class="gallery-card gallery-card--one">
+                  <div class="gallery-image"></div>
+                  <figcaption>Elegant dashboards</figcaption>
+                </figure>
+                <figure class="gallery-card gallery-card--two">
+                  <div class="gallery-image"></div>
+                  <figcaption>Crafted workflows</figcaption>
+                </figure>
+                <figure class="gallery-card gallery-card--three">
+                  <div class="gallery-image"></div>
+                  <figcaption>Refined product stories</figcaption>
+                </figure>
+                <figure class="gallery-card gallery-card--four">
+                  <div class="gallery-image"></div>
+                  <figcaption>Seamless collaboration</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel"
+              id="panel-contact"
+              role="tabpanel"
+              aria-labelledby="tab-contact"
+              hidden
+            >
+              <div class="contact-layout">
+                <div class="contact-copy">
+                  <p class="panel-kicker">Contact</p>
+                  <h2>Let’s create something remarkable.</h2>
+                  <p>
+                    Share your project goals and we will shape a tailored
+                    experience for your audience.
+                  </p>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                  <label class="field">
+                    <span>Name</span>
+                    <input id="name" name="name" type="text" required />
+                    <small class="field-error" id="nameError"></small>
+                  </label>
+                  <label class="field">
+                    <span>Email</span>
+                    <input id="email" name="email" type="email" required />
+                    <small class="field-error" id="emailError"></small>
+                  </label>
+                  <label class="field">
+                    <span>Message</span>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                    <small class="field-error" id="messageError"></small>
+                  </label>
+                  <button class="submit-btn" type="submit">Send message</button>
+                  <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
